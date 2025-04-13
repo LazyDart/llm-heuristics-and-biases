@@ -29,7 +29,7 @@ class OpenAIModel(LLM):
         self.prompt_template = ChatPromptTemplate(self.messages)
 
 
-    def set_system_prompt(self, prompt: str):
+    def set_system_prompt(self, prompt: str) -> None:
         self.system_prompt = prompt
         system_message = ("system", prompt)
         if self.messages:
@@ -37,22 +37,28 @@ class OpenAIModel(LLM):
         else:
             self.messages = [system_message]
 
-    def add_messages(self, messages: list[tuple[str, str]]):
+    def add_messages(self, messages: list[tuple[str, str]]) -> None:
         self.messages += messages
 
-    def generate(self, text: str):
-        # TODO: Prompt Template is utilised wrongly here.
-        prompt = ChatPromptTemplate.from_messages(self.messages + [("user", text)])
+    def generate(self, text: str, add_to_history: bool = False) -> str:
 
-        chain = prompt | self.llm
+        user_message = [("user", text)]
 
-        return chain.invoke({}).content
+        llm_answer = self.llm.invoke(self.messages + user_message).content
+
+        if add_to_history:
+            self.add_messages(
+                user_message 
+                + [("assistant", llm_answer)]
+            )
+
+        return llm_answer
     
-    def set_experimental_template(self, messages: list[tuple[str, str]]):
+    def set_experimental_template(self, messages: list[tuple[str, str]]) -> None:
         self.prompt_template = ChatPromptTemplate.from_messages(messages)
 
     
-    def generate_with_variables(self, variables: dict[str, str]):
+    def generate_with_variables(self, variables: dict[str, str]) -> str:
         
         required_variables = sorted(self.prompt_template.input_variables)
 
@@ -61,4 +67,4 @@ class OpenAIModel(LLM):
 
         chain = self.prompt_template | self.llm
 
-        return chain.invoke(variables)
+        return chain.invoke(variables).content
