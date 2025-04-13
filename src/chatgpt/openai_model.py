@@ -1,5 +1,6 @@
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts.string import get_template_variables
 
 from src.model.model import LLM
 
@@ -25,6 +26,8 @@ class OpenAIModel(LLM):
 
         self.messages = []
 
+        self.prompt_template = ChatPromptTemplate(self.messages)
+
 
     def set_system_prompt(self, prompt: str):
         self.system_prompt = prompt
@@ -37,10 +40,25 @@ class OpenAIModel(LLM):
     def add_messages(self, messages: list[tuple[str, str]]):
         self.messages += messages
 
-    def generate(self, text):
+    def generate(self, text: str):
         # TODO: Prompt Template is utilised wrongly here.
         prompt = ChatPromptTemplate.from_messages(self.messages + [("user", text)])
 
         chain = prompt | self.llm
 
         return chain.invoke({}).content
+    
+    def set_experimental_template(self, messages: list[tuple[str, str]]):
+        self.prompt_template = ChatPromptTemplate.from_messages(messages)
+
+    
+    def generate_with_variables(self, variables: dict[str, str]):
+        
+        required_variables = sorted(self.prompt_template.input_variables)
+
+        assert required_variables == sorted(list(variables.keys())), \
+            f"Atleast one of {required_variables} required variables is missing."
+
+        chain = self.prompt_template | self.llm
+
+        return chain.invoke(variables)
