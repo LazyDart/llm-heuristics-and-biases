@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "Ile złotych byłabyś/byłbyś w stanie zapłacić za ten zestaw? Podaj tylko liczbę.",
+    "context": "Pewnego sobotniego poranka Basia wybrała się na lokalny pchli targ. Uwielbiała takie miejsca - nie tylko ze względu na okazje, jakie można tam było znaleźć, ale także dla samej atmosfery: gwar sprzedawców, zapach starych stron i skrzypiące drewniane skrzynki. Wśród starych płyt winylowych, lampek nocnych i porcelany jej wzrok przyciągnęło stoisko z książkami. Było tam wszystko: powieści kryminalne, romanse, literatura współczesna, a nawet kilka zapomnianych klasyków. Zaczęła przeglądać jedno z pudeł i znalazła zestaw 10 książek. Sześć z nich było w doskonałym stanie – czyste okładki, sztywne grzbiety, pachnące niemal jak nowe. Pozostałe cztery były wyraźnie starsze: pożółkłe strony, a w jednej marginesy były podkreślone długopisem. Mimo to cały zestaw wydawał się interesujący - mogła w nim znaleźć coś wartościowego.",
+    "multi": false
+  },
+  {
+    "id": 2,
+    "question": "Ile złotych byłabyś/byłbyś w stanie zapłacić za tą kawę? Podaj tylko liczbę.",
+    "context": "Kate weszła do kawiarni. Zamówiła małą filiżankę kawy, która nie wydawała się duża, ale po napełnieniu napój sięgał niemal po sam brzeg. Filiżanka miała pojemność 150 ml, a kawa w niej była bardzo intensywna i aromatyczna.",
+    "multi": false
+  },
+  {
+    "id": 3,
+    "question": "Ile złotych byłabyś/byłbyś w stanie zapłacić za ten zestaw? Podaj tylko liczbę.",
+    "context": "Pewnego sobotniego poranka Basia wybrała się na lokalny pchli targ. Uwielbiała takie miejsca – nie tylko ze względu na okazje, jakie można tam było znaleźć, ale także ze względu na atmosferę: gwar sprzedawców, zapach starych stron i skrzypiące drewniane skrzynki. Wśród starych płyt winylowych, lampek nocnych i porcelany jej wzrok przyciągnęło stoisko z książkami. Było tam wszystko: powieści kryminalne, romanse, literatura współczesna, a nawet kilka zapomnianych klasyków. Zaczęła przeglądać jedno z pudeł i znalazła zestaw 4 książek – wszystkie w doskonałym stanie. Czyste okładki, sztywne grzbiety, pachnące niemal jak nowe. Cały zestaw wydawał się interesujący – mogła tam znaleźć coś wartościowego.",
+    "multi": false
+  },
+  {
+    "id": 4,
+    "question": "Ile złotych byłabyś/byłbyś w stanie zapłacić za tą kawę? Podaj tylko liczbę.",
+    "context": "Kate weszła do kawiarni i zamówiła dużą filiżankę kawy. Filiżanka miała pojemność 400 ml, ale kawa nie sięgała nawet do połowy. Napój był jednak bardzo intensywny i aromatyczny.",
+    "multi": false
+  },
+  {
+    "id": 5,
+    "multi": true,
+    "context": "Wyobraź sobie, że właśnie kupujesz nową doniczkę. Ty i Twoja rodzina rozważacie dwa rodzaje, doniczkę G i doniczkę H, które wyglądają identycznie. Poprosiłeś/aś swoją przyjaciółkę, która ma dużo roślin, o radę, a ona powiedziała, że miała doniczkę H, w której umieściła swoją ulubioną roślinę, i ta nagle uschła — co nigdy wcześniej jej się nie zdarzyło. Później, w sklepie, zauważasz, że doniczka H wykonana jest z lepszego, bezpieczniejszego materiału i jest nieco tańsza niż doniczka G.",
+    "subquestions": [
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że powinieneś/powinnaś wybrać doniczkę G zamiast doniczki H?"
+      },
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że powinieneś/powinnaś wybrać doniczkę H zamiast doniczki G?"
+      }
+    ],
+    "scale": {
+      "text": "Odpowiedz używając skali od {min} do {max}, gdzie {description}.",
+      "min": 1,
+      "max": 10,
+      "description": "1 - w ogóle nie przekonany, 10 - w pełni przekonany"
+    }
+  },
+  {
+    "id": 6,
+    "multi": true,
+    "context": "Kupiłeś/aś bilet do kina za 20 dolarów na film, na który długo czekałeś/aś. Po 30 minutach okazuje się, że film jest nudny i zupełnie nie spełnia Twoich oczekiwań. Czujesz się zmęczony/a i wiesz, że mógłbyś/mogłabyś spędzić ten czas w sposób przyjemniejszy lub bardziej produktywny.",
+    "subquestions": [
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że powinieneś/powinnaś zostać do końca filmu tylko dlatego, że już zapłaciłeś/aś za bilet?"
+      },
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że NIE powinieneś/powinnaś zostawać do końca filmu tylko dlatego, że już zapłaciłeś/aś za bilet?"
+      }
+    ],
+    "scale": {
+      "text": "Odpowiedz używając skali od {min} do {max}, gdzie {description}.",
+      "min": 1,
+      "max": 10,
+      "description": "1 - w ogóle nie przekonany, 10 - w pełni przekonany"
+    }
+  },
+  {
+    "id": 7,
+    "multi": true,
+    "context": "Wyobraź sobie, że właśnie kupujesz nową doniczkę. Ty i Twoja rodzina rozważacie dwa rodzaje — doniczkę E i doniczkę F — które wyglądają identycznie. Poprosiłeś/aś swoją przyjaciółkę, która ma dużo roślin, o radę, a ona powiedziała, że kiedyś upuściła doniczkę F i ta roztrzaskała się, poważnie ją raniąc — coś takiego nigdy wcześniej jej się nie zdarzyło. Później, w sklepie, zauważasz, że doniczka F wykonana jest z lepszego, ładniejszego materiału i jest nieco tańsza niż doniczka E.",
+    "subquestions": [
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że powinieneś/powinnaś wybrać doniczkę E zamiast doniczki F?"
+      },
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że powinieneś/powinnaś wybrać doniczkę F zamiast doniczki E?"
+      }
+    ],
+    "scale": {
+      "text": "Odpowiedz używając skali od {min} do {max}, gdzie {description}.",
+      "min": 1,
+      "max": 10,
+      "description": "1 - w ogóle nie przekonany, 10 - w pełni przekonany"
+    }
+  },
+  {
+    "id": 8,
+    "multi": true,
+    "context": "Kupiłeś/aś specjalny bilet do kina za 200 dolarów na film, na który naprawdę czekałeś/aś. Po 30 minutach okazuje się, że film jest dość przeciętny i nie spełnia Twoich oczekiwań. Wiesz, że mógłbyś/mogłabyś spędzić ten czas w sposób przyjemniejszy lub bardziej produktywny.",
+    "subquestions": [
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że powinieneś/powinnaś zostać do końca filmu tylko dlatego, że już zapłaciłeś/aś za bilet?"
+      },
+      {
+        "question": "Na podstawie tych informacji, jak bardzo jesteś przekonany/a, że NIE powinieneś/powinnaś zostawać do końca filmu tylko dlatego, że już zapłaciłeś/aś za bilet?"
+      }
+    ],
+    "scale": {
+      "text": "Odpowiedz używając skali od {min} do {max}, gdzie {description}.",
+      "min": 1,
+      "max": 10,
+      "description": "1 - w ogóle nie przekonany, 10 - w pełni przekonany"
+    }
+  }
+]

@@ -1,0 +1,30 @@
+
+{
+  "questions": [
+    {
+      "pair": 1,
+      "A": "So I am booking a hotel for 900$, I can spend 150$ to not lose cancellation option. Is it worth it? Answer Yes/No. Limit your answer to 1 word.",
+      "B": "So I am booking a hotel for 900$, I can spend 150$ to get cancellation option. Is it worth it? Answer Yes/No. Limit your answer to 1 word."
+    },
+    {
+      "pair": 2,
+      "A": "I'm ordering something online. I can save $30 if I'm okay with a longer wait. Is fast delivery option worth it? Answer Yes/No. Limit your answer to 1 word.",
+      "B": "I'm ordering something online. I can get it faster if I pay $30 more. Is fast delivery option worth it? Answer Yes/No. Limit your answer to 1 word."
+    },
+    {
+      "pair": 3,
+      "A": "My $12/month subscription is about to expire. I can renew so I don't lose my playlists. Is it worth it? Answer Yes/No. Limit your answer to 1 word.",
+      "B": "My $12/month subscription is about to expire. I can renew to keep my playlists. Is it worth it? Answer Yes/No. Limit your answer to 1 word."
+    },
+    {
+      "pair": 4,
+      "A": "My $12/month subscription is about to expire. I can renew so I don't lose my playlists. I don't plan to listen to anything for next few months. Is it worth it? Answer Yes/No. Limit your answer to 1 word.",
+      "B": "My $12/month subscription is about to expire. I can renew to keep my playlists. I don't plan to listen to anything for next few months. Is it worth it? Answer Yes/No. Limit your answer to 1 word."
+    },
+    {
+      "pair": 5,
+      "A": "I'm going on a $2,000 trip. I can pay $100 to avoid losing everything if I have to cancel. Is it worth it? Answer Yes/No. Limit your answer to 1 word.",
+      "B": "I'm going on a $2,000 trip. I can pay $100 to make sure I get my money back if I have to cancel. Is it worth it? Answer Yes/No. Limit your answer to 1 word."
+    }
+  ]
+}

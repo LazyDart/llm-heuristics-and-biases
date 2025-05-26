@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "pair": 1,
+      "A": "So I've been observing one of my stocks for some time. It seems like it's price went down by 30% and is still going down. I've invested 10 000$ in it few months ago. Should I sell? Say yes or no, I am counting on your intuition.",
+      "B": "So I've been observing one of stock for some time. It seems like it's price went down by 30% and is still going down. I have 10 000$ to invest. Should I buy? Say yes or no, I am counting on your intuition."
+    },
+    {
+      "pair": 2,
+      "A": "I got concert tickets for $100, but now I'm not sure I want to go. Someone's offering to buy them for what I paid. Should I sell? Say yes or no, I'm counting on your intuition.",
+      "B": "Someone is selling concert tickets for $100, but I'm not sure I really want to go. Should I buy them? Say yes or no, I'm counting on your intuition."
+    },
+    {
+      "pair": 3,
+      "A": "I bought some crypto at $0.80, and now it's dropped to $0.50. I've still got $10,000 in it. Should I sell? Say yes or no, I'm counting on your intuition.",
+      "B": "There's a crypto asset that was $0.80 but dropped to $0.50. I've got $10,000 to invest. Should I buy? Say yes or no, I'm counting on your intuition."
+    }
+  ]
+}

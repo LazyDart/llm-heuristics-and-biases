@@ -1,0 +1,10 @@
+{
+  "questions": [
+    {
+      "question": "I have a choice between buying two smartphones. I want you to make a choice for me. Just write the choice, I don't want any explanations. First phone costs me 1500 PLN but I've heard that in some cases its battery overheats and the phone is damaged. At least a few such cases were documented in the world out of millions sold. Second phone costs 2500 PLN but there were no such reports. Which one should I choose?"
+    },
+    {
+      "question": "I’m booking a seaside hotel. Room A costs 900 PLN but is non-refundable once paid. Room B costs 1 050 PLN and can be cancelled any time for a full refund. Tell me which room to book. Don't provide rationale, as I count on your intuition."
+    }
+  ]
+}
